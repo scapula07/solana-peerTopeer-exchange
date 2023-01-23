@@ -1,3 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+	.layout-container {
+		@apply w-[90%] mx-auto;
+	}
+
+  .btn{
+    @apply flex items-center justify-center text-base leading-5 capitalize rounded w-[210px] h-12 text-white;
+  }
+
+	.error {
+		@apply border border-red-500;
+	}
+}
