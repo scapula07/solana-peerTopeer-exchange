@@ -1,13 +1,18 @@
-import Layout from "@/components/layout";
+import DashboardLayout from "@/components/layout/dashboard";
+import HomeLayout from "@/components/layout/home";
 import { Home } from "@/pages";
+import { DashboardHome } from "@/pages/dashboard";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 const AppRouter = () => {
 	return (
 		<BrowserRouter>
 			<Routes>
-				<Route path="/" element={<Layout />}>
+				<Route path="/" element={<HomeLayout />}>
 					<Route index element={<Home />} />
+				</Route>
+				<Route element={<DashboardLayout />}>
+					<Route path="/home" element={<DashboardHome />} />
 				</Route>
 				{/* <Route element={<DashboardLayout />}>
 					<Route path="/doctors" element={<Doctors />} />

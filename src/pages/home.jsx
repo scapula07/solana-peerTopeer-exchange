@@ -1,6 +1,7 @@
+import { Button } from "@/components/input/button";
 // images
 import hero from "@/assets/images/hero.svg";
-import Button from "@/components/input/button";
+
 const Home = () => {
 	return (
 		<div className="layout-container h-[calc(100vh_-_80px)] grid place-items-center">
@@ -12,7 +13,7 @@ const Home = () => {
 					We're changing the way people send money. Receive money, when you need
 					it.
 				</p>
-				<Button title="get started" centered />
+				<Button href="/home" title="get started" centered />
 				<img src={hero} alt="" className="mt-[45px] mx-auto" />
 			</div>
 		</div>
