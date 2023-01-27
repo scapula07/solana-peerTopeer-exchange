@@ -6,7 +6,9 @@ const DashboardLayout = () => {
 	return (
 		<div>
 			<DashboardNavbar />
-			<Outlet />
+			<main className="pt-20 bg-[#F5F5F5] min-h-screen">
+				<Outlet />
+			</main>
 		</div>
 	);
 };

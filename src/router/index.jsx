@@ -1,7 +1,7 @@
 import DashboardLayout from "@/components/layout/dashboard";
 import HomeLayout from "@/components/layout/home";
 import { Home } from "@/pages";
-import { DashboardHome } from "@/pages/dashboard";
+import { ExchangePage } from "@/pages/dashboard";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 const AppRouter = () => {
@@ -12,7 +12,7 @@ const AppRouter = () => {
 					<Route index element={<Home />} />
 				</Route>
 				<Route element={<DashboardLayout />}>
-					<Route path="/home" element={<DashboardHome />} />
+					<Route path="/exchange" element={<ExchangePage />} />
 				</Route>
 				{/* <Route element={<DashboardLayout />}>
 					<Route path="/doctors" element={<Doctors />} />
