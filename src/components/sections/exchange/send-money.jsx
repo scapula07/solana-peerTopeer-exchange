@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { StepOne, StepTwo } from ".";
 
-
 const SendMoney = () => {
 	const initialbankDetails = {
 		amount: "",
@@ -14,13 +13,9 @@ const SendMoney = () => {
 	const [formData, setFormData] = useState(initialbankDetails);
 
 	return !formData.amount ? (
-		<StepOne setFormData={setFormData} />
+		<StepOne {...{ setFormData }} />
 	) : (
-		<StepTwo
-			setFormData={setFormData}
-			formData={formData}
-			initialbankDetails={initialbankDetails}
-		/>
+		<StepTwo {...{ formData, setFormData, initialbankDetails }} />
 	);
 };
 

@@ -13,7 +13,7 @@ const Home = () => {
 					We're changing the way people send money. Receive money, when you need
 					it.
 				</p>
-				<Button href="/home" title="get started" centered />
+				<Button href="/exchange" title="get started" centered />
 				<img src={hero} alt="" className="mt-[45px] mx-auto" />
 			</div>
 		</div>

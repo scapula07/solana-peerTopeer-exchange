@@ -41,6 +41,7 @@ const Button = ({
 	) : (
 		<button
 			className={twMerge(`${button({ intent, centered })}  ${className}`)}
+			{...props}
 		>
 			{icon ? <img src={icon} alt="" className="mr-[11px]" /> : null}
 			{title}
