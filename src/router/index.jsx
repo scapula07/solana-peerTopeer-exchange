@@ -1,7 +1,7 @@
 import DashboardLayout from "@/components/layout/dashboard";
 import HomeLayout from "@/components/layout/home";
 import { Home } from "@/pages";
-import { ExchangePage } from "@/pages/dashboard";
+import { ExchangePage, OrderPage } from "@/pages/dashboard";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 const AppRouter = () => {
@@ -13,17 +13,8 @@ const AppRouter = () => {
 				</Route>
 				<Route element={<DashboardLayout />}>
 					<Route path="/exchange" element={<ExchangePage />} />
+					<Route path="/orders" element={<OrderPage />} />
 				</Route>
-				{/* <Route element={<DashboardLayout />}>
-					<Route path="/doctors" element={<Doctors />} />
-					<Route path="doctors/:id" element={<Doctor />} />
-					<Route path="/Patients" element={<Patients />} />
-					<Route path="Patients/:id" element={<Patient />} />
-					<Route path="/message" element={<Message />} />
-					<Route path="/video-call" element={<VideoCall />} />
-					<Route path="/profile" element={<Profile />} />
-					<Route path="/meeting" element={<Meeting />} />
-				</Route> */}
 			</Routes>
 		</BrowserRouter>
 	);
